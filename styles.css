@@ -1,7 +1,7 @@
 
 h1, h2, h3,
 h4, h5, h6{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
@@ -16,8 +16,16 @@ h2 {
 h3 {
     font-size: 36px;
     font-weight: 900;
+    color: #1F2937;
 }
+
+h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
 p {
+    margin-top: 5px;
     margin-bottom: 20px;
 }
 
@@ -26,6 +34,7 @@ ul {
     padding: 0;
     list-style-type: none;
     display: flex;
+    gap: 16px;
 }
 
 a {
@@ -36,12 +45,12 @@ a {
 }
 
 a:hover {
-    color: #1F2937;
     background-color: #00B295;
     border-radius: 8px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
-.button {
+.button{
     display: inline-block;
     width: auto;
     padding: 10px 30px 10px 30px;
@@ -127,11 +136,12 @@ img {
 .info {
     display: flex;
     align-items: center;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: center;
     width: 1400px;
     align-items: center;
-    height: 500px;
+    margin: 20px;
+    text-align:  center;
 }
 
 .container-2  {
@@ -147,4 +157,76 @@ img {
     flex: 1;
     max-width: 250px;
     gap: 16px;
+}
+
+.container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #C9DAEA;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 1400px;
+    padding: 80px;
+    margin: 20px;
+}
+
+.quote .quote-text {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.quote .author {
+    font-weight: bold;
+    text-align: right;
+    font-size: 22px;
+    margin-right: 50px;
+}
+
+.container-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1400px;
+    background-color: #00B295;
+    margin: 80px;
+    padding: 40px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.cta .button {
+    border-color: #fff;
+    border: solid;
+    border-width: 2px;
+}
+
+.cta .button:hover {
+    border-color: #fff;
+    color: #00B295;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin-top: 50px;
 }
